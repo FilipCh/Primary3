@@ -45,6 +45,10 @@ VALUES
 
 -- We are assuming that we can restrict to HR employees to add a Sales employee using Java/web dev technologies.
 -- Query to find HR employees:
+SELECT E.employee_name, T.team_type FROM Team T
+RIGHT JOIN Employee E ON E.team_id = T.team_id
+WHERE team_type = 'HR';
+
 SELECT employee_name AS `Name`, salary AS `Salary`,bank_account_number AS `Bank Account Number`, 
 national_insurance_number AS `National Insurance Number`, commission_rate AS `Commission Rate` 
 FROM SalesEmployee SE

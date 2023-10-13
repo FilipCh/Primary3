@@ -36,6 +36,7 @@ INSERT INTO Project (project_name, project_value)
     ('Wind Project', 40000.00),
     ('Sky Project', 1000000.00),
 	('Music Project', 200000.00);
+
     
 INSERT INTO ProjectTechnologies (project_id, technology_id)
 	VALUES 
